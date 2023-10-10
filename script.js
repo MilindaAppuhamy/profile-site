@@ -11,26 +11,42 @@ const aboutCard = document.querySelector(".about-card");
 const landingSection = document.querySelector(".landing-section");
 const aboutSection = document.querySelector(".about-section");
 const experienceSection = document.querySelector(".experience-section");
-const portfolioSection = document.querySelector(".portfolio-section");
+const portfolioSection = document.querySelector(".project");
 const homeButton = document.querySelector(".home");
 const aboutButton = document.querySelector(".about");
 const experienceButton = document.querySelector(".experience");
 const portfolioButton = document.querySelector(".portfolio");
 
 homeButton.addEventListener("click", () => {
-  landingSection.scrollIntoView({ behavior: "smooth" });
+  landingSection.scrollIntoView({
+    behavior: "smooth",
+    block: "end",
+    inline: "nearest",
+  });
 });
 
 aboutButton.addEventListener("click", () => {
-  aboutSection.scrollIntoView({ behavior: "smooth" });
+  aboutSection.scrollIntoView({
+    behavior: "smooth",
+    block: "center",
+    inline: "nearest",
+  });
 });
 
 experienceButton.addEventListener("click", () => {
-  experienceSection.scrollIntoView({ behavior: "smooth" });
+  experienceSection.scrollIntoView({
+    behavior: "smooth",
+    block: "center",
+    inline: "nearest",
+  });
 });
 
 portfolioButton.addEventListener("click", () => {
-  portfolioSection.scrollIntoView({ behavior: "smooth" });
+  portfolioSection.scrollIntoView({
+    behavior: "smooth",
+    block: "center",
+    inline: "nearest",
+  });
 });
 
 const timeLimit = 50;
