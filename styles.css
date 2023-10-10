@@ -8,7 +8,8 @@ body {
 }
 
 .landing-section {
-  height: 100vh;
+  /* height: 100vh; */
+  margin-top: auto;
 }
 
 .landing-section .navbar {
@@ -233,7 +234,7 @@ body {
 }
 
 .about-section {
-  height: 100vh;
+  /* height: 100vh; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -328,7 +329,7 @@ body {
 }
 
 .experience-section {
-  height: 100vh;
+  /* height: 100vh; */
   width: 100%;
   display: flex;
   justify-content: center;
@@ -369,7 +370,7 @@ td > p {
 }
 
 .portfolio-section {
-  height: 100vh;
+  /* height: 100vh; */
   display: flex;
   flex-direction: column;
   align-items: center;
