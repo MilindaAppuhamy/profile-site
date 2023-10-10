@@ -7,6 +7,31 @@ const hello = document.querySelector(".hello");
 const myWork = document.querySelectorAll(".work");
 const title = document.querySelector(".title");
 const codeContainer = document.querySelector(".code-container");
+const aboutCard = document.querySelector(".about-card");
+const landingSection = document.querySelector(".landing-section");
+const aboutSection = document.querySelector(".about-section");
+const experienceSection = document.querySelector(".experience-section");
+const portfolioSection = document.querySelector(".portfolio-section");
+const homeButton = document.querySelector(".home");
+const aboutButton = document.querySelector(".about");
+const experienceButton = document.querySelector(".experience");
+const portfolioButton = document.querySelector(".portfolio");
+
+homeButton.addEventListener("click", () => {
+  landingSection.scrollIntoView({ behavior: "smooth" });
+});
+
+aboutButton.addEventListener("click", () => {
+  aboutSection.scrollIntoView({ behavior: "smooth" });
+});
+
+experienceButton.addEventListener("click", () => {
+  experienceSection.scrollIntoView({ behavior: "smooth" });
+});
+
+portfolioButton.addEventListener("click", () => {
+  portfolioSection.scrollIntoView({ behavior: "smooth" });
+});
 
 const timeLimit = 50;
 const cycles = 3;
@@ -52,6 +77,7 @@ title.addEventListener("click", scramble());
 
 window.addEventListener("resize", () => {
   if (window.innerWidth < 740) {
+    aboutCard.style.width = "85%";
     navLinks.style.display = "none";
     myName.style.fontSize = "50px";
     hello.style.fontSize = "25px";
@@ -62,6 +88,7 @@ window.addEventListener("resize", () => {
       item.style.marginTop = "0px";
     });
   } else {
+    aboutCard.style.width = "800px";
     navLinks.style.display = "flex";
     myName.style.fontSize = "80px";
     myName.style.lineHeight = "80px";
