@@ -1,0 +1,438 @@
+body {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  width: 100vw;
+  background-color: rgb(36, 36, 36);
+  overflow-x: hidden;
+}
+
+.landing-section {
+  height: 100vh;
+}
+
+.landing-section .navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(28, 28, 28);
+  height: 100px;
+  padding-left: 10px;
+  opacity: 0.9;
+  z-index: 1;
+}
+
+.landing-section .navbar .title {
+  font-family: sans-serif;
+  font-size: 42px;
+  color: rgb(255, 255, 255);
+}
+
+.landing-section .navbar .links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.landing-section .navbar .links > p {
+  margin-right: 24px;
+  font-family: sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 300ms ease-in-out;
+  color: rgb(255, 255, 255);
+}
+
+.landing-section .navbar .links > p:hover {
+  transform: translateY(-5px);
+}
+
+.landing-section main {
+  padding-top: 90px;
+  width: calc(100vw - 15px);
+  height: calc(100% - 110px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.landing-section .details {
+  width: 45%;
+}
+
+.landing-section .details .details-container > h1 {
+  font-family: sans-serif;
+  font-weight: bolder;
+  font-size: 80px;
+  line-height: 80px;
+  color: rgb(255, 255, 255);
+  margin-bottom: 30px;
+  margin-top: 0;
+}
+
+.landing-section .details .details-container > h3 {
+  font-family: sans-serif;
+  font-weight: lighter;
+  font-size: 40px;
+  color: rgb(255, 255, 255);
+  margin-bottom: 8px;
+}
+
+.landing-section .work-container > p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 30px;
+  font-family: sans-serif;
+  padding-left: 10px;
+  font-weight: 800;
+}
+
+.landing-section .work-container > p:first-child {
+  color: rgb(77, 77, 255);
+}
+
+.landing-section .work-container > p:nth-child(2) {
+  color: rgb(100, 167, 0);
+}
+
+.landing-section .work-container > p:nth-child(3) {
+  color: coral;
+}
+
+.code-container {
+  width: 45%;
+  background-color: black;
+  border-radius: 10px;
+}
+
+.code-container .top {
+  width: calc(100% - 20px);
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  background-color: rgb(20, 20, 20);
+  padding-left: 20px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.code-container .top .button {
+  width: 15px;
+  height: 15px;
+  margin-right: 12px;
+  border-radius: 50%;
+}
+
+.code-container .top .button:first-child {
+  background-color: rgb(255, 97, 97);
+}
+
+.code-container .top .button:nth-child(2) {
+  background-color: rgb(221, 170, 0);
+}
+
+.code-container .top .button:nth-child(3) {
+  background-color: rgb(32, 158, 66);
+}
+
+.code-container .code {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.code-container .code > span {
+  display: flex;
+  padding-left: 30px;
+}
+
+.code-container .code > span > p {
+  padding-right: 8px;
+  font-family: sans-serif;
+  color: whitesmoke;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: large;
+}
+
+.code .line-one > p:first-child {
+  color: rgb(100, 134, 225);
+}
+.code .line-one > p:nth-child(2),
+.code .line-seven > p:nth-child(2) {
+  color: rgb(207, 195, 91);
+}
+.code .line-one > p:nth-child(3),
+.code .line-eight > p:nth-child(2),
+.code .line-twelve > p:nth-child(1),
+.code .line-eleven > p:nth-child(3),
+.code .line-nine > p:nth-child(3),
+.code .line-ten > p:nth-child(3),
+.code .line-two > p:nth-child(1),
+.code .line-three > p:nth-child(1),
+.code .line-four > p:nth-child(1),
+.code .line-five > p:nth-child(1),
+.code .line-six > p:nth-child(1) {
+  color: rgb(185, 185, 185);
+}
+.code .line-one > p:nth-child(4),
+.code .line-seven > p:nth-child(3),
+.code .line-fourteen > p:nth-child(1),
+.code .line-thirteen > p:nth-child(1),
+.code .line-eight > p:nth-child(1) {
+  color: rgb(183, 75, 205);
+}
+.code .line-seven > p:nth-child(1) {
+  color: rgb(21, 185, 103);
+}
+.code .line-five > p:nth-child(2),
+.code .line-six > p:nth-child(2),
+.code .line-nine > p:nth-child(1),
+.code .line-ten > p:nth-child(1),
+.code .line-eleven > p:nth-child(1),
+.code .line-eleven > p:nth-child(4) {
+  color: rgb(2, 165, 215);
+}
+.code .line-nine > p:nth-child(1),
+.code .line-ten > p:nth-child(1),
+.code .line-eleven > p:nth-child(1) {
+  padding-right: 2px;
+}
+.code .line-two > p:nth-child(2),
+.code .line-three > p:nth-child(2),
+.code .line-four > p:nth-child(2) {
+  color: rgb(243, 195, 105);
+}
+.code .line-nine > p:nth-child(2),
+.code .line-ten > p:nth-child(2),
+.code .line-eleven > p:nth-child(2) {
+  color: rgb(30, 172, 172);
+}
+.code .line-two,
+.code .line-three,
+.code .line-four,
+.code .line-five,
+.code .line-six,
+.code .line-seven,
+.code .line-thirteen {
+  margin-left: 20px;
+}
+.code .line-eight,
+.code .line-twelve {
+  margin-left: 40px;
+}
+.code .line-nine,
+.code .line-ten,
+.code .line-eleven {
+  margin-left: 60px;
+}
+
+.about-section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.about-section .about-card {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.05),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  border-radius: 15px;
+  width: 85%;
+  height: 60%;
+}
+
+.about-section .about-card .title {
+  color: rgb(214, 116, 234);
+  font-family: sans-serif;
+  font-weight: 800;
+  font-size: 34px;
+  padding-left: 15px;
+}
+
+.about-section .about-card .about-details {
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.about-details .about-para {
+  font-size: large;
+  color: rgb(225, 225, 225);
+  font-family: sans-serif;
+}
+
+.about-details .about-lists {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.about-details .interests > h4,
+.about-details .hobbies > h4 {
+  font-family: sans-serif;
+  font-weight: normal;
+  font-size: larger;
+}
+
+.about-details .interests > h4 {
+  color: rgb(243, 195, 105);
+}
+
+.about-details .hobbies > h4 {
+  color: rgb(34, 220, 127);
+}
+
+.about-details .interests > ul,
+.about-details .hobbies > ul {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 15px;
+  padding-bottom: 16px;
+}
+
+.about-details .interests > ul > li,
+.about-details .hobbies > ul > li {
+  font-family: sans-serif;
+  margin-bottom: 5px;
+  font-size: large;
+  color: rgb(225, 225, 225);
+}
+
+.p-tag {
+  font-family: sans-serif;
+  font-size: large;
+  color: rgb(30, 172, 172);
+}
+
+.ul-tag {
+  font-family: sans-serif;
+  font-size: large;
+  color: rgb(30, 172, 172);
+}
+
+.experience-section {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.experience-section > table {
+  font-family: sans-serif;
+  width: calc(90% - 30px);
+  margin-left: 15px;
+  margin-right: 15px;
+  border-collapse: collapse;
+}
+
+td,
+th {
+  border: 4px solid rgb(225, 225, 225);
+  text-align: left;
+  padding: 20px;
+  font-size: larger;
+}
+.table-headings > th {
+  padding: 25px;
+}
+.table-headings th:first-child {
+  color: rgb(2, 165, 215);
+}
+.table-headings th:nth-child(2) {
+  color: rgb(243, 195, 105);
+}
+.table-headings th:nth-child(3) {
+  color: rgb(34, 220, 127);
+}
+td,
+td > p {
+  color: rgb(225, 225, 225);
+}
+
+.portfolio-section {
+  height: 100vh;
+}
+
+.portfolio-section .title {
+  font-family: sans-serif;
+  font-size: 36px;
+  color: rgb(77, 77, 255);
+  margin-left: 20px;
+}
+
+.portfolio-section .project {
+  width: 85%;
+  margin-left: calc(15% / 2 - 30px);
+  background-color: rgb(22, 22, 22);
+  padding: 25px;
+  margin-bottom: 40px;
+  border-radius: 15px;
+}
+
+.project .images {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.project .images > img {
+  height: 300px;
+  margin-right: 15px;
+}
+
+.project .json > span {
+  display: flex;
+  flex-direction: row;
+}
+
+.project .json > span > p {
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-bottom: 0;
+  font-family: sans-serif;
+  font-size: large;
+}
+
+.project .json .line-two,
+.project .json .line-three,
+.project .json .line-four,
+.project .json .line-five {
+  padding-left: 28px;
+}
+
+.project .json .line-one > p,
+.project .json .line-six > p {
+  color: rgb(225, 225, 225);
+}
+
+.project .json .line-two > p:nth-child(1),
+.project .json .line-three > p:nth-child(1),
+.project .json .line-four > p:nth-child(1),
+.project .json .line-five > p:nth-child(1) {
+  color: rgb(182, 96, 199);
+}
+
+.project .json .line-two > p:nth-child(2),
+.project .json .line-three > p:nth-child(2),
+.project .json .line-four > p:nth-child(2),
+.project .json .line-five > p:nth-child(2) {
+  color: rgb(255, 241, 112);
+}
