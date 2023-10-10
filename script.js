@@ -75,7 +75,7 @@ function scramble() {
 
 title.addEventListener("click", scramble());
 
-window.addEventListener("resize", () => {
+function changeWindow() {
   if (window.innerWidth < 740) {
     aboutCard.style.width = "85%";
     navLinks.style.display = "none";
@@ -117,4 +117,12 @@ window.addEventListener("resize", () => {
     codeContainer.style.width = "45%";
     details.style.width = "45%";
   }
+}
+
+window.addEventListener("resize", () => {
+  changeWindow();
+});
+
+window.addEventListener("load", () => {
+  changeWindow();
 });
