@@ -5,12 +5,20 @@ body {
   width: 100vw;
   background-color: rgb(36, 36, 36);
   overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .landing-section {
   /* height: 100vh; */
-  margin-top: 80px;
-  margin-bottom: 200px;
+  margin-top: 50px;
+  margin-bottom: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .landing-section .navbar {
@@ -54,13 +62,10 @@ body {
 
 .landing-section main {
   padding-top: 90px;
-  width: calc(100vw - 15px);
-  height: calc(100% - 110px);
+  width: 95%;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-left: 30px;
-  padding-right: 30px;
 }
 
 .landing-section .details {
@@ -240,7 +245,7 @@ body {
   align-items: center;
   justify-content: center;
   margin: 0;
-  margin-bottom: 200px;
+  margin-bottom: 120px;
   margin-top: 100px;
 }
 
@@ -333,17 +338,16 @@ body {
 
 .experience-section {
   /* height: 100vh; */
-  width: 100%;
+  width: 90%;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 200px;
-  margin-bottom: 100px;
+  margin-top: 100px;
+  margin-bottom: 120px;
 }
 
 .experience-section > table {
   font-family: sans-serif;
-  /* width: calc(80% - 40px); */
   max-width: 1200px;
   border-collapse: collapse;
 }
@@ -356,7 +360,7 @@ th {
   font-size: larger;
 }
 .table-headings > th {
-  padding: 10px;
+  padding: 10px 0 10px 0;
 }
 .table-headings th:first-child {
   color: rgb(2, 165, 215);
@@ -377,8 +381,9 @@ td > p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 200px;
+  margin-top: 100px;
   margin-bottom: 100px;
+  width: 90%;
 }
 
 .portfolio-section .portfolio-title {
