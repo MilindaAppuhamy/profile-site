@@ -16,6 +16,10 @@ const homeButton = document.querySelector(".home");
 const aboutButton = document.querySelector(".about");
 const experienceButton = document.querySelector(".experience");
 const portfolioButton = document.querySelector(".portfolio");
+const facebook = document.querySelector(".facebook");
+const twitter = document.querySelector(".twitter");
+const instagram = document.querySelector(".instagram");
+const tiktok = document.querySelector(".tiktok");
 
 homeButton.addEventListener("click", () => {
   landingSection.scrollIntoView({
@@ -141,4 +145,17 @@ window.addEventListener("resize", () => {
 
 window.addEventListener("load", () => {
   changeWindow();
+});
+
+facebook.addEventListener("click", () => {
+  location.href = "https://en-gb.facebook.com/";
+});
+twitter.addEventListener("click", () => {
+  location.href = "https://twitter.com/?lang=en";
+});
+instagram.addEventListener("click", () => {
+  location.href = "https://www.instagram.com/";
+});
+tiktok.addEventListener("click", () => {
+  location.href = "https://www.tiktok.com/en/";
 });
