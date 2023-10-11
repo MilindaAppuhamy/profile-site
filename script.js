@@ -145,7 +145,11 @@ window.addEventListener("resize", () => {
 
 window.addEventListener("load", () => {
   changeWindow();
-  landingSection.scrollIntoView({ behavior: "smooth" });
+  landingSection.scrollIntoView({
+    behavior: "smooth",
+    block: "end",
+    inline: "nearest",
+  });
 });
 
 facebook.addEventListener("click", () => {

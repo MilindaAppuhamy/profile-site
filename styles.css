@@ -90,7 +90,7 @@ body {
   margin-bottom: 8px;
 }
 
-.landing-section .work-container > p {
+.landing-section .work-container > h2 {
   margin-top: 0px;
   margin-bottom: 0px;
   font-size: 30px;
@@ -99,15 +99,15 @@ body {
   font-weight: 800;
 }
 
-.landing-section .work-container > p:first-child {
-  color: rgb(77, 77, 255);
+.landing-section .work-container > h2:first-child {
+  color: rgb(142, 142, 255);
 }
 
-.landing-section .work-container > p:nth-child(2) {
+.landing-section .work-container > h2:nth-child(2) {
   color: rgb(100, 167, 0);
 }
 
-.landing-section .work-container > p:nth-child(3) {
+.landing-section .work-container > h2:nth-child(3) {
   color: coral;
 }
 
