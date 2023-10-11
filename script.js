@@ -145,6 +145,7 @@ window.addEventListener("resize", () => {
 
 window.addEventListener("load", () => {
   changeWindow();
+  landingSection.scrollIntoView({ behavior: "smooth" });
 });
 
 facebook.addEventListener("click", () => {
